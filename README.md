@@ -59,6 +59,6 @@ UPLOAD A MAXIMUM OF 5 PICTURES (SIZE: MAX 1MB EACH) SHOWCASING YOUR PROJECT (THE
 
 ## References
 
-1.
-2.
+1. https://www.phonepe.com/pulse/
+2. https://docs.setu.co/data/account-aggregator/fi-data-types
 3.
