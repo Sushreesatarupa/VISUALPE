@@ -1,11 +1,38 @@
-# Express (Node)
+## Fintech Open Month Hackathon
 
-Clone the repository
+Project Name
+WHAT ARE YOU CALLING IT?
+8/50
+VisualPe
+Tagline
+WRITE A SHORT, SHARP AND ON POINT DESCRIPTION OF YOUR PROJECT
+0/200
+The problem it solves
+DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER E.T.C (MARKDOWN SUPPORTED)
+0/2000
+Challenges we ran into
+TELL US ABOUT ANY SPECIFIC BUG OR HURDLE YOU RAN INTO WHILE BUILDING THIS PROJECT. HOW DID YOU GET OVER IT? (MARKDOWN SUPPORTED)
+0/2000
+Technologies we used
+WRITE A COMMA SEPARATED LIST OF TECHNOLOGIES YOU USED IN BUILDING THE PROJECT.
+10/10
+Links
+ADD LINKS TO GITHUB, WEBSITE, APP STORE E.T.C OR WHEREVER THE PROJECT CAN BE TESTED LIVE
+1/5
+Paste or type a link (e.g. https://devfolio.github.io) and then press 'Enter'
+Video Demo
+ADD LINK TO VIDEO DEMOING THE FUNCTIONING OF THE PROJECT. OR, RECORD ONE USING LOOM
+Paste or type link here
+Pictures
+UPLOAD A MAXIMUM OF 5 PICTURES (SIZE: MAX 1MB EACH) SHOWCASING YOUR PROJECT (THE FIRST IMAGE WILL BE USED AS A PREVIEW ON SOCIAL MEDIA).
++
++
++
++
++
+Select platforms this project is built for
 
-Replace values in `.env` with your credentials. On Sandbox, you can use the `API_URL`. On Production, change it to URL provided by Setu.
 
-Install dependencies - `npm install` or `yarn install`
 
-Start app - `npm run start` or `yarn start`
 
-This repo includes a Procfile, so you can easily deploy this service to Heroku for testing.
+Preview Submission
