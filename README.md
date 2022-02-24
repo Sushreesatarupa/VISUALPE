@@ -3,8 +3,7 @@
 ## VisualPe
 
 ## Tagline
-WRITE A SHORT, SHARP AND ON POINT DESCRIPTION OF YOUR PROJECT
-0/200
+VisualPe dashboard is a visualization tool that helps to track all your relevant financial investments and cash flow, visualize your portfolio, and enable you to track expenses, and returns in detail.
 
 ---
 
