@@ -14,8 +14,9 @@ DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER
 ---
 
 ## Challenges we ran into
-TELL US ABOUT ANY SPECIFIC BUG OR HURDLE YOU RAN INTO WHILE BUILDING THIS PROJECT. HOW DID YOU GET OVER IT? (MARKDOWN SUPPORTED)
-0/2000
+1) It took time to understand the setu aa API and the data flow.
+2) The consent procedure was quite hectic, but we got through it.
+3) It was difficult for us to put our cloud of ideas into the working prototype in 3-4 days, but we worked hard to get over it and overcame the challenges.
 
 ---
 
