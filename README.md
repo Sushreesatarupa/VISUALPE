@@ -56,3 +56,9 @@ UPLOAD A MAXIMUM OF 5 PICTURES (SIZE: MAX 1MB EACH) SHOWCASING YOUR PROJECT (THE
 ## Platforms this project is built for: Web
 
 ---
+
+## References
+
+1.
+2.
+3.
