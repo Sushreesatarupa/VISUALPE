@@ -1,8 +1,6 @@
 
 
-## VisualPe
-
-### Fintech Open Month Hackathon
+## VisualPe - Fintech Open Month Hackathon
 
 ## Tagline
 VisualPe dashboard is a visualization tool that helps to track all your relevant financial investments and cash flow, visualize your portfolio, and enable you to track expenses, and returns in detail.
@@ -10,8 +8,20 @@ VisualPe dashboard is a visualization tool that helps to track all your relevant
 ---
 
 ## The problem it solves
-DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER E.T.C (MARKDOWN SUPPORTED)
-0/2000
+
+-	Consider that 65% of people are visual learners; according to several studies, providing people with graphical data illustrations increases understanding and leads to better financial decisions.
+
+-	Therefore, we have tried to use Charts, Tables, Graphs, and Dashboards for data visualization: This is possible due to setu account aggregator and phonepay pulse.
+
+-	It will provide different perspectives on the financial data, giving insights that can facilitate strategic decisions and actions that improve the overall finance management.
+-	Our project targets professionals and civilians who need a personalized finance management system irrespective of their location, situation, and time.
+
+-	VisualPe dashboard will help you to track all your relevant finance PIs, allow effective cash management, and enables you to track expenses and profits in detail.
+
+-	It will power all big and small companies, investors, MSME to grow their businesses and profit by analyzing their statistics.
+
+
+-	It will help senior citizens to keep track of their pensions and easily calculate their assets.
 
 ---
 
@@ -27,24 +37,6 @@ DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER
 -	The front-end of our website uses HTML, CSS, javascript, jquery, bootstrap, and material UI.
 -	For the back-end, we have used node.js, express.js, setu API, and Heroku for hosting.
 -	For the database we have used MongoDB and mongoose.
-
----
-
-
-#	Introduction
-•	Consider that 65% of people are visual learners; according to several studies, providing people with graphical data illustrations increases understanding and leads to better financial decisions.
-
--	Therefore, we have tried to use Charts, Tables, Graphs, and Dashboards for data visualization: This is possible due to setu account aggregator and phonepay pulse.
-
--	It will provide different perspectives on the financial data, giving insights that can facilitate strategic decisions and actions that improve the overall finance management.
--	Our project targets professionals and civilians who need a personalized finance management system irrespective of their location, situation, and time.
-
--	VisualPe dashboard will help you to track all your relevant finance PIs, allow effective cash management, and enables you to track expenses and profits in detail.
-
--	It will power all big and small companies, investors, MSME to grow their businesses and profit by analyzing their statistics.
-
-
--	It will help senior citizens to keep track of their pensions and easily calculate their assets.
 
 ---
 
