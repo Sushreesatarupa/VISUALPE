@@ -23,10 +23,10 @@ DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER
 ---
 
 ## Technologies we used
-•	Our working prototype focuses on using PhonePe Pulse data as the source of Open Data and setu Account Aggregator framework as a foundation to power the Improved Visualization based on the financial information. 
-•	The front-end of our website uses HTML, CSS, javascript, jquery, bootstrap, and material UI.
-•	For the back-end, we have used node.js, express.js, setu API, and Heroku for hosting.
-•	For the database we have used MongoDB and mongoose.
+-	Our working prototype focuses on using PhonePe Pulse data as the source of Open Data and setu Account Aggregator framework as a foundation to power the Improved Visualization based on the financial information. 
+-	The front-end of our website uses HTML, CSS, javascript, jquery, bootstrap, and material UI.
+-	For the back-end, we have used node.js, express.js, setu API, and Heroku for hosting.
+-	For the database we have used MongoDB and mongoose.
 
 ---
 
@@ -34,17 +34,17 @@ DESCRIBE WHAT CAN PEOPLE USE IT FOR, OR HOW IT MAKES EXISTING TASKS EASIER/SAFER
 #	Introduction
 •	Consider that 65% of people are visual learners; according to several studies, providing people with graphical data illustrations increases understanding and leads to better financial decisions.
 
-•	Therefore, we have tried to use Charts, Tables, Graphs, and Dashboards for data visualization: This is possible due to setu account aggregator and phonepay pulse.
+-	Therefore, we have tried to use Charts, Tables, Graphs, and Dashboards for data visualization: This is possible due to setu account aggregator and phonepay pulse.
 
-•	It will provide different perspectives on the financial data, giving insights that can facilitate strategic decisions and actions that improve the overall finance management.
-•	Our project targets professionals and civilians who need a personalized finance management system irrespective of their location, situation, and time.
+-	It will provide different perspectives on the financial data, giving insights that can facilitate strategic decisions and actions that improve the overall finance management.
+-	Our project targets professionals and civilians who need a personalized finance management system irrespective of their location, situation, and time.
 
-•	VisualPe dashboard will help you to track all your relevant finance PIs, allow effective cash management, and enables you to track expenses and profits in detail.
+-	VisualPe dashboard will help you to track all your relevant finance PIs, allow effective cash management, and enables you to track expenses and profits in detail.
 
-•	It will power all big and small companies, investors, MSME to grow their businesses and profit by analyzing their statistics.
+-	It will power all big and small companies, investors, MSME to grow their businesses and profit by analyzing their statistics.
 
 
-•	It will help senior citizens to keep track of their pensions and easily calculate their assets.
+-	It will help senior citizens to keep track of their pensions and easily calculate their assets.
 
 ---
 
@@ -64,8 +64,8 @@ The user gets access to the data of each and every bank registered on his mobile
 We can also use the bank select filter below the profile tab to view specific or selective groups of bank data.
 
 5)	deposit 
-•	We have tried to show the UPI vs non-UPI transactions, credit vs debit, and balance of each account.
-•	We have also compared users’ UPI transactions division to the average Indian UPI transaction division by using phonepe pulse data.
+-	We have tried to show the UPI vs non-UPI transactions, credit vs debit, and balance of each account.
+-	We have also compared users’ UPI transactions division to the average Indian UPI transaction division by using phonepe pulse data.
 
 6)	We have tried to add security by authenticating the user with OTP on the registered mobile number and an additional secret pin.
 
@@ -94,7 +94,8 @@ We can also use the bank select filter below the profile tab to view specific or
 ---
 
 # Post Hackathon
-•	Our project is a fully working application and we have some future plans for it. After the hackathon, we will work on a prediction system, automate maturity value calculations, add an inbuilt calculator, and tax on profits of various assets.
+-	Our project is a fully working application and we have some future plans for it. 
+-	After the hackathon, we will work on a prediction system, automate maturity value calculations, add an inbuilt calculator, and tax on profits of various assets.
 
 ---
 
