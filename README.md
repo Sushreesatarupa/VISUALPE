@@ -102,7 +102,7 @@ ADD LINKS TO GITHUB, WEBSITE, APP STORE E.T.C OR WHEREVER THE PROJECT CAN BE TES
 
 ## Video Demo
 
-[![image](https://user-images.githubusercontent.com/64991656/155870612-47c8a831-e8eb-45ee-bd39-738e6fd63b72.png)](http://img.youtube.com/vi/3Mj5xAckuN0/0.jpg)](http://www.youtube.com/watch?v=3Mj5xAckuN0 "VisualPe")
+[![image](http://img.youtube.com/vi/3Mj5xAckuN0/0.jpg)](http://www.youtube.com/watch?v=3Mj5xAckuN0 "VisualPe")
 
 ---
 
