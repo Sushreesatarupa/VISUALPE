@@ -102,13 +102,7 @@ ADD LINKS TO GITHUB, WEBSITE, APP STORE E.T.C OR WHEREVER THE PROJECT CAN BE TES
 
 ## Video Demo
 
-<object width="425" height="350">
-  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
-  <param name="wmode" value="transparent" />
-  <embed src="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
+[![image](https://user-images.githubusercontent.com/64991656/155870612-47c8a831-e8eb-45ee-bd39-738e6fd63b72.png)](http://img.youtube.com/vi/3Mj5xAckuN0/0.jpg)](http://www.youtube.com/watch?v=3Mj5xAckuN0 "VisualPe")
 
 ---
 
