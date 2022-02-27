@@ -10,16 +10,15 @@ VisualPe dashboard is a visualization tool that helps to track all your relevant
 ## The problem it solves
 
 -	Consider that 65% of people are visual learners; according to several studies, providing people with graphical data illustrations increases understanding and leads to better financial decisions.
-
 -	Therefore, we have tried to use Charts, Tables, Graphs, and Dashboards for data visualization: This is possible due to setu account aggregator and phonepay pulse.
 
 -	It will provide different perspectives on the financial data, giving insights that can facilitate strategic decisions and actions that improve the overall finance management.
--	Our project targets professionals and civilians who need a personalized finance management system irrespective of their location, situation, and time.
+
+-	Our project targets people who need a personalized finance management system irrespective of their location, situation, and time.
 
 -	VisualPe dashboard will help you to track all your relevant finance PIs, allow effective cash management, and enables you to track expenses and profits in detail.
 
 -	It will power all big and small companies, investors, MSME to grow their businesses and profit by analyzing their statistics.
-
 
 -	It will help senior citizens to keep track of their pensions and easily calculate their assets.
 
@@ -107,12 +106,13 @@ ADD LINKS TO GITHUB, WEBSITE, APP STORE E.T.C OR WHEREVER THE PROJECT CAN BE TES
 ---
 
 ## Pictures
-UPLOAD A MAXIMUM OF 5 PICTURES (SIZE: MAX 1MB EACH) SHOWCASING YOUR PROJECT (THE FIRST IMAGE WILL BE USED AS A PREVIEW ON SOCIAL MEDIA).
-+
-+
-+
-+
-+
+![vp1](https://user-images.githubusercontent.com/64991656/155870385-6fd50053-f645-4b58-b956-9104cc5635e7.jpeg)
+
+![vp2](https://user-images.githubusercontent.com/64991656/155870392-57f0fe6f-7313-40a4-a4ae-32e40f9d71cb.jpeg)
+
+![Vp3](https://user-images.githubusercontent.com/64991656/155870395-e31ec73e-a939-4ac2-aa88-c4710986805a.jpeg)
+![SmartSelect_20220227-110929_Samsung Notes](https://user-images.githubusercontent.com/64991656/155870398-e13349a0-dddf-4873-9b79-befdab226582.jpg)
+![vp5](https://user-images.githubusercontent.com/64991656/155870399-f388aa2a-4e6a-4064-a3fe-57cb69ac9ced.jpeg)
 
 ---
 
