@@ -126,4 +126,3 @@ ADD LINKS TO GITHUB, WEBSITE, APP STORE E.T.C OR WHEREVER THE PROJECT CAN BE TES
 
 1. https://www.phonepe.com/pulse/
 2. https://docs.setu.co/data/account-aggregator/fi-data-types
-3.
