@@ -1,6 +1,0 @@
-[submodule "visual-pay-backend"]
-	path = visual-pay-backend
-	url = https://github.com/Sayansree/visual-pay-backend
-[submodule "VisualPe"]
-	path = VisualPe
-	url = https://github.com/ansuman528/VisualPe
