@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Visualpe</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dropdown.css">
+    <script src="js/jwt-decode.min.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <!-- End layout styles -->
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- navbar-->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html">VisualPe</a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input onclick="myFunction()" type="text" id="myInput" class="form-control bg-transparent border-0 dropbtn" placeholder="Search..." onkeyup="filterFunction()">
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#sec1">Deposit</a>
+                  <a href="#sec2">Recurring deposit</a>
+                  <a href="#sec3">Term Deposit</a>
+                  <a href="#sec4">Certificate of deposit</a>
+                  <a href="#sec5">Indian deposit recipt</a>
+                  <a href="#sec6">Credit Card</a>
+                  <a href="insurance.html#sec1">Insurance Policies</a>
+                  <a href="insurance.html#sec2">ULIP</a>
+                  <a href="pention.html#sec1">Employee provident fund</a>
+                  <a href="pention.html#sec2">Public provident fund</a>
+                  <a href="investment.html#sec1">Mutual funds</a>
+                  <a href="investment.html#sec2">Bonds</a>
+                  <a href="investment.html#sec3">Deventures</a>
+                  <a href="investment.html#sec4">Exchange Traded Fund</a>
+                  <a href="investment.html#sec5">National pension system</a>
+                  <a href="investment.html#sec6">Government securities</a>
+                  <a href="investment.html#sec7">Commercial Papers</a>
+                  <a href="investment.html#sec8">Real estate investment trusts</a>
+                  <a href="investment.html#sec9">Infrastructure investment funds</a>
+                  <a href="investment.html#sec10">Alternate investment funds</a>
+                  <a href="investment.html#sec11">Systematic investment plan</a>
+                  <a href="investment.html#sec12">Equity shares</a>
+                  <a href="investment.html#sec13">Collective investment scheme</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="assets/images/faces/face1.jpg" alt="image">
+                  <span class="availability-status online"></span>
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black" id="phn-no">User</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown" style="padding: 1rem;width:200px" aria-labelledby="profileDropdown" id="bank-list">
+                <span type="button" onclick="logout()"> Sign out    </span>
+              </div>
+            </li>
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- sidebar -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="assets/images/faces/face1.jpg" alt="profile">
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2"id="phn-noa">User</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="total.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="menu-title">Bank</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="index.html">Deposit </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#sec2">Recurring Deposite</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#sec3">Term Deposite</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#sec4">Certificate of deposite</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#sec5">Indian deposit recipt</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#sec6">Credit Card</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="menu-title">Insurance</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="insurance.html#sec1">Insurance Policies</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="insurance.html#sec2">ULIP</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="menu-title">Pension</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="pention.html#sec1">Employee Provident fund</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="pention.html#sec2">Public provident fund</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="menu-title">Investment</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-medical-bag menu-icon"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec1">Mutual funds</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec2">Bonds</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec3">Deventures</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec4">Exchange Traded funds</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec5">National pension system</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec6">Government securities</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec7">Commercial Papers</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec8">Real estate Investment trusts</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec9">Infrastructure Investment trust</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec10">Alternate Investment funds</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec11">Systematic Investment plan</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec12">Equity shares</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="investment.html#sec13">Collective Investmentscheme</a></li>
+                </ul>
+              </div>
+            </li>
+            
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div id="sec1" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span>Bank Accounts Overview
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row" id="bank-tile">
+              <div class="col-md-4 ">
+              <img  src="assets/images/Pendulum.gif"><h3>loading ...</h3>
+            </div>
+            </div>
+
+
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Deposit
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              
+            </div>
+            <div class="row">
+              <div class="col-lg-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Credit-Debit Pi chart</h4>
+                    <canvas id="dep-pi" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 stretch-card grid-margin">
+                <div class="card bg-gradient-info card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3">Total Credit <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="dep-c">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Total Debit<i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="dep-d">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Upi Transaction <i class="mdi mdi-cash mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="dep-u">Loading ...</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Upi Pi chart</h4>
+                    <canvas id="dep-pii" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body" style="background: #b585e2">
+                    <h4 class="card-title">Average Usage distribution </h4>
+                    <h4> Powered by <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAxIiBoZWlnaHQ9IjM2IiB2aWV3Qm94PSIwIDAgMjAxIDM2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDApIj4KPHBhdGggZD0iTTE4LjAyNTkgMzUuOTk0OUMyNy45ODE0IDM1Ljk5NDkgMzYuMDUxOSAyNy45MzcyIDM2LjA1MTkgMTcuOTk3NUMzNi4wNTE5IDguMDU3NzQgMjcuOTgxNCAwIDE4LjAyNTkgMEM4LjA3MDQ5IDAgMCA4LjA1Nzc0IDAgMTcuOTk3NUMwIDI3LjkzNzIgOC4wNzA0OSAzNS45OTQ5IDE4LjAyNTkgMzUuOTk0OVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNi4xODg3IDEzLjI3ODlDMjYuMTg4NyAxMi41Nzk1IDI1LjYyMDEgMTIuMDE2OSAyNC45MjQ3IDEyLjAxNjlIMjIuNTE4NUwxNi45ODAzIDUuNjMwODhDMTYuNDY3NSA1LjAzNzg5IDE1LjY1NTMgNC43OTk2OSAxNC44OTkgNS4wMjc3NkwxMi45NzUxIDUuNjAwNDdDMTIuNjgwNiA1LjY4NjYzIDEyLjU4OTMgNi4wNjE2OSAxMi44MTI2IDYuMjY5NDlMMTguODQzMyAxMi4wMTY5SDkuNjI5NzdDOS4zNjU4IDEyLjAxNjkgOS4xNDc1MiAxMi4yMjk4IDkuMTQ3NTIgMTIuNDk4NFYxMy41Mzc0QzkuMTQ3NTIgMTQuMjM2OCA5LjcxNjA3IDE0Ljc5OTQgMTAuNDExNSAxNC43OTk0SDExLjgyMjdWMTkuNjU5OUMxMS44MjI3IDIzLjI4ODggMTMuNzU2OCAyNS40NTI5IDE3LjAwMDYgMjUuNDUyOUMxNy45ODU0IDI1LjQ1MjkgMTguODMzMSAyNS4zMzY0IDE5LjgwMjcgMjQuOTU2MlYyOC4xOTQ5QzE5LjgwMjcgMjkuMDcxNyAyMC41MTM0IDI5Ljc4NjMgMjEuMzk2NiAyOS43ODYzSDIyLjc5NzdDMjMuMTI3NyAyOS43ODYzIDIzLjM5NjcgMjkuNTE3NyAyMy4zOTY3IDI5LjE4ODJWMTQuNzk5NEgyNS43MDY0QzI1Ljk3MDQgMTQuNzk5NCAyNi4xODg3IDE0LjU4NjUgMjYuMTg4NyAxNC4zMTc5VjEzLjI3ODlaTTE5LjgwMjcgMjEuOTI1NEMxOS4yMzQxIDIyLjE3ODggMTguNDExOCAyMi4zMjA3IDE3Ljc5NzUgMjIuMzIwN0MxNi4xNDc3IDIyLjMyMDcgMTUuNDExNyAyMS40OTk3IDE1LjQxMTcgMTkuNjQ5N1YxNC43OTk0SDE5LjgwMjdWMjEuOTI1NFoiIGZpbGw9IiM1RjI1OUYiLz4KPHBhdGggZD0iTTkxLjI3NyAyOC4yODExVjIxLjc0MzFDOTEuMjc3IDIwLjA5NTkgOTAuNjMyMyAxOS4zNjEgODkuMTgwNSAxOS4zNjFDODguNTY2MyAxOS4zNjEgODcuODcwOCAxOS40NDIxIDg3LjQxOSAxOS41OTkyVjI5LjE3ODJDODcuNDE5IDI5LjUwNzcgODcuMTUgMjkuNzc2MyA4Ni44MiAyOS43NzYzSDg0LjUxNTRDODQuMTg1NCAyOS43NzYzIDgzLjkxNjQgMjkuNTA3NyA4My45MTY0IDI5LjE3ODJWMTcuOTU3QzgzLjkxNjQgMTcuNTY2OCA4NC4xODA0IDE3LjIyNzIgODQuNDk1MSAxNy4xMTU3Qzg1Ljk4MjQgMTYuNTg4NiA4Ny41NTEgMTYuMjY0MiA4OS4xODU2IDE2LjI2NDJDOTIuODE1MSAxNi4yNjQyIDk0LjgxNTIgMTguMjEwNSA5NC44MTUyIDIxLjczOFYyOS4xNzMyQzk0LjgxNTIgMjkuNTAyNiA5NC41NDYyIDI5Ljc3MTIgOTQuMjE2MiAyOS43NzEySDkyLjc4OThDOTEuOTUyMiAyOS43ODEzIDkxLjI3NyAyOS4xMTIzIDkxLjI3NyAyOC4yODExWk0xMDAuMzc5IDI0LjMzOEgxMDAuMjk4VjI0LjQxOTFMMTAwLjMwMyAyNS4yNjU1QzEwMC4zMDMgMjYuNDg3IDEwMS4wODQgMjcuMTkxNSAxMDIuNDQ1IDI3LjE5MTVDMTAzLjQ1NSAyNy4xOTE1IDEwNC40MTQgMjYuOTM4IDEwNS4zNjkgMjYuNDEwOUMxMDUuNDI1IDI2LjM4MDUgMTA1LjUyNiAyNi4zNCAxMDUuNjg5IDI2LjM0QzEwNS44NzYgMjYuMzQgMTA2LjAyOSAyNi40NTE1IDEwNi4xMiAyNi41NTI5QzEwNi4yMTIgMjYuNjU5MyAxMDYuNDcgMjYuOTU4MyAxMDYuNDcgMjYuOTU4M0MxMDYuNzE5IDI3LjI0NzIgMTA2Ljg3NiAyNy42MjIzIDEwNi44NjEgMjguMDAyNEMxMDYuODQ2IDI4LjUxOTMgMTA2LjU2MiAyOC45NzA0IDEwNi4xMjUgMjkuMjAzNkMxMDQuOTkzIDI5LjgwNjcgMTAzLjc1IDMwLjA5NTYgMTAyLjMyMyAzMC4wOTU2QzEwMC43MzQgMzAuMDk1NiA5OS4zNzM3IDI5LjY2OTggOTguMzg4OSAyOC44NjkxQzk3LjMyOCAyOC4wMDc0IDk2Ljc2OTYgMjYuNzM1MyA5Ni43Njk2IDI1LjE5NDZWMjEuMjkyQzk2Ljc2OTYgMTguMTQ5NiA5OC44MjA0IDE2LjI2OTMgMTAyLjI1MiAxNi4yNjkzQzEwNS42MDIgMTYuMjY5MyAxMDcuNTIxIDE4LjA5OSAxMDcuNTIxIDIxLjI5MlYyMy43NEMxMDcuNTIxIDI0LjA2OTQgMTA3LjI1MiAyNC4zMzggMTA2LjkyMiAyNC4zMzhIMTAwLjM3OVpNMTAwLjI5OCAyMi4xMjgySDEwMC4zNzlIMTA0LjA3NEgxMDQuMTU2VjIyLjA0NzJMMTA0LjE2MSAyMS4xMTk3QzEwNC4xNjEgMTkuODY3OCAxMDMuNDYgMTkuMTQ4MSAxMDIuMjMyIDE5LjE0ODFDMTAwLjk4OCAxOS4xNDgxIDEwMC4zMDMgMTkuODQ3NSAxMDAuMzAzIDIxLjExOTdMMTAwLjI5OCAyMi4wNDcyVjIyLjEyODJaTTEyNi4wNDUgMjQuMzM4SDEyNS45NjNWMjQuNDE5MUwxMjUuOTY4IDI1LjI2NTVDMTI1Ljk2OCAyNi40ODcgMTI2Ljc1IDI3LjE5MTUgMTI4LjExMSAyNy4xOTE1QzEyOS4xMjEgMjcuMTkxNSAxMzAuMDggMjYuOTM4IDEzMS4wMzUgMjYuNDEwOUMxMzEuMDkgMjYuMzgwNSAxMzEuMTkyIDI2LjM0IDEzMS4zNTQgMjYuMzRDMTMxLjU0MiAyNi4zNCAxMzEuNjk1IDI2LjQ1MTUgMTMxLjc4NiAyNi41NTI5QzEzMS44NzcgMjYuNjU5MyAxMzIuMTM2IDI2Ljk1ODMgMTMyLjEzNiAyNi45NTgzQzEzMi4zODUgMjcuMjQ3MiAxMzIuNTQyIDI3LjYyMjMgMTMyLjUyNyAyOC4wMDI0QzEzMi41MTIgMjguNTE5MyAxMzIuMjI4IDI4Ljk3MDQgMTMxLjc5MSAyOS4yMDM2QzEzMC42NTkgMjkuODA2NyAxMjkuNDE1IDMwLjA5NTYgMTI3Ljk4OSAzMC4wOTU2QzEyNi40IDMwLjA5NTYgMTI1LjA0IDI5LjY2OTggMTI0LjA1NSAyOC44NjkxQzEyMi45OTQgMjguMDA3NCAxMjIuNDM1IDI2LjczNTMgMTIyLjQzNSAyNS4xOTQ2VjIxLjI5MkMxMjIuNDM1IDE4LjE0OTYgMTI0LjQ4NiAxNi4yNjkzIDEyNy45MTggMTYuMjY5M0MxMzEuMjY4IDE2LjI2OTMgMTMzLjE4NyAxOC4wOTkgMTMzLjE4NyAyMS4yOTJWMjMuNzRDMTMzLjE4NyAyNC4wNjk0IDEzMi45MTggMjQuMzM4IDEzMi41ODggMjQuMzM4SDEyNi4wNDVaTTEyNS45NjMgMjIuMTI4MkgxMjYuMDQ1SDEyOS43NEgxMjkuODIxVjIyLjA0NzJMMTI5LjgyNiAyMS4xMTk3QzEyOS44MjYgMTkuODY3OCAxMjkuMTI2IDE5LjE0ODEgMTI3Ljg5NyAxOS4xNDgxQzEyNi42NTQgMTkuMTQ4MSAxMjUuOTY4IDE5Ljg0NzUgMTI1Ljk2OCAyMS4xMTk3TDEyNS45NjMgMjIuMDQ3MlYyMi4xMjgyWk02Ni42NDE3IDI5Ljc4MTNINjguMDY4MkM2OC4zOTgxIDI5Ljc4MTMgNjguNjY3MiAyOS41MTI3IDY4LjY2NzIgMjkuMTgzM1YyMS43MjI4QzY4LjY2NzIgMTguMzExOCA2Ni44Mzk3IDE2LjI2OTMgNjMuNzgzOCAxNi4yNjkzQzYyLjg1OTkgMTYuMjY5MyA2MS44NjQ5IDE2LjQyNjQgNjEuMjgxMiAxNi42OVYxMy4wMDUzQzYxLjI4MTIgMTIuMTc5MiA2MC42MDYgMTEuNTA1MSA1OS43Nzg2IDExLjUwNTFINTguMzc3NUM1OC4wNDc1IDExLjUwNTEgNTcuNzc4NSAxMS43NzM3IDU3Ljc3ODUgMTIuMTAzMlYyOS4xODMzQzU3Ljc3ODUgMjkuNTEyNyA1OC4wNDc1IDI5Ljc4MTMgNTguMzc3NSAyOS43ODEzSDYwLjY4MjFDNjEuMDEyMSAyOS43ODEzIDYxLjI4MTIgMjkuNTEyNyA2MS4yODEyIDI5LjE4MzNWMTkuNjgwM0M2MS43NTgzIDE5LjQ2MjMgNjIuNDYzOSAxOS4zNDA3IDYzLjAxNzIgMTkuMzQwN0M2NC40ODQzIDE5LjM0MDcgNjUuMTM5MSAyMC4wNzU2IDY1LjEzOTEgMjEuNzIyOFYyOC4yODExQzY1LjEzOTEgMjkuMTEyMyA2NS44MTQzIDI5Ljc4MTMgNjYuNjQxNyAyOS43ODEzWk04MS44NjA1IDIxLjMzNzZWMjUuMDk4M0M4MS44NjA1IDI4LjE3OTggNzkuNzEzMiAzMC4wOTU2IDc2LjI1NjIgMzAuMDk1NkM3Mi43ODQxIDMwLjA5NTYgNzAuNjI2NiAyOC4xNzk4IDcwLjYyNjYgMjUuMDk4M1YyMS4zMzc2QzcwLjYyNjYgMTguMjEwNSA3Mi43ODQxIDE2LjI2OTMgNzYuMjU2MiAxNi4yNjkzQzc5LjcxMzIgMTYuMjY5MyA4MS44NjA1IDE4LjIxMDUgODEuODYwNSAyMS4zMzc2Wk03OC4zMDcxIDIxLjMzNzZDNzguMzA3MSAyMC4wODU3IDc3LjU2MDkgMTkuMzY2IDc2LjI2MTMgMTkuMzY2Qzc0Ljk2MTggMTkuMzY2IDc0LjIxNTYgMjAuMDg1NyA3NC4yMTU2IDIxLjMzNzZWMjUuMDk4M0M3NC4yMTU2IDI2LjM0IDc0Ljk0MTUgMjcuMDI0MiA3Ni4yNjEzIDI3LjAyNDJDNzcuNTgxMiAyNy4wMjQyIDc4LjMwNzEgMjYuMzQgNzguMzA3MSAyNS4wOTgzVjIxLjMzNzZaTTU1LjgyNDEgMTkuNjA0MkM1NS44MTkgMjIuODYzMSA1My4zODI0IDI1LjA1MjYgNTAuMTg0NCAyNS4wNTI2QzQ5LjM3NzIgMjUuMDUyNiA0OC42ODY4IDI0Ljk0MTEgNDguMDAxNSAyNC42NzI1VjI5LjE4MzNDNDguMDAxNSAyOS41MTI3IDQ3LjczMjUgMjkuNzgxMyA0Ny40MDI1IDI5Ljc4MTNINDUuMDQyMUM0NC43MTIxIDI5Ljc4MTMgNDQuNDQzMSAyOS41MTI3IDQ0LjQ0MzEgMjkuMTgzM1YxMy4xNzc3QzQ0LjQ0MzEgMTIuNzMxNyA0NC43NTI3IDEyLjQyNzYgNDUuMDQ3MSAxMi4zMjYyQzQ2LjUzNDUgMTEuODE5NCA0OC4wOTI5IDExLjUxMDIgNDkuNjc2NyAxMS41MTAyQzUzLjI5MSAxMS41MTAyIDU1LjgyOTIgMTMuNzA5OCA1NS44MjkyIDE3LjExNTdMNTUuODI0MSAxOS42MDQyWk01Mi4yMDk4IDE3LjAzOTdDNTIuMjA5OCAxNS40NTMzIDUxLjEzODcgMTQuNjQ3NSA0OS41NjUgMTQuNjQ3NUM0OC42OTcgMTQuNjQ3NSA0OC4wMDE1IDE0LjkyNjIgNDguMDAxNSAxNC45MjYyVjIxLjU1NTVDNDguNTU5OSAyMS44NjQ3IDQ4Ljk1NTkgMjEuOTYxIDQ5LjU5MDQgMjEuOTYxQzUxLjE0MzggMjEuOTYxIDUyLjIwOTggMjEuMDk0MyA1Mi4yMDk4IDE5LjU3ODlWMTcuMDM5N1pNMTIwLjk2OCAxOS42MDQyQzEyMC45NjMgMjIuODYzMSAxMTguNTI3IDI1LjA1MjYgMTE1LjMyOSAyNS4wNTI2QzExNC41MjEgMjUuMDUyNiAxMTMuODMxIDI0Ljk0MTEgMTEzLjE0NiAyNC42NzI1VjI5LjE4MzNDMTEzLjE0NiAyOS41MTI3IDExMi44NzcgMjkuNzgxMyAxMTIuNTQ3IDI5Ljc4MTNIMTEwLjE4NkMxMDkuODU2IDI5Ljc4MTMgMTA5LjU4NyAyOS41MTI3IDEwOS41ODcgMjkuMTgzM1YxMy4xNzc3QzEwOS41ODcgMTIuNzMxNyAxMDkuODk3IDEyLjQyNzYgMTEwLjE5MSAxMi4zMjYyQzExMS42NzkgMTEuODE5NCAxMTMuMjM3IDExLjUxMDIgMTE0LjgyMSAxMS41MTAyQzExOC40MzUgMTEuNTEwMiAxMjAuOTczIDEzLjcwOTggMTIwLjk3MyAxNy4xMTU3TDEyMC45NjggMTkuNjA0MlpNMTE3LjM1NCAxNy4wMzk3QzExNy4zNTQgMTUuNDUzMyAxMTYuMjgzIDE0LjY0NzUgMTE0LjcwOSAxNC42NDc1QzExMy44NDEgMTQuNjQ3NSAxMTMuMTQ2IDE0LjkyNjIgMTEzLjE0NiAxNC45MjYyVjIxLjU1NTVDMTEzLjcwNCAyMS44NjQ3IDExNC4xIDIxLjk2MSAxMTQuNzM1IDIxLjk2MUMxMTYuMjg4IDIxLjk2MSAxMTcuMzU0IDIxLjA5NDMgMTE3LjM1NCAxOS41Nzg5VjE3LjAzOTdaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTk0Ljk4MSAxNi4wOTE4QzE5MS41NDkgMTYuMDkxOCAxODkuNDk4IDE3Ljk2NzEgMTg5LjQ5OCAyMS4xMTQ1VjI1LjAxN0MxODkuNDk4IDI2LjU1NzggMTkwLjA1NyAyNy44Mjk5IDE5MS4xMTggMjguNjkxNUMxOTIuMTAzIDI5LjQ5MjMgMTkzLjQ2MyAyOS45MTgxIDE5NS4wNTIgMjkuOTE4MUMxOTYuNDgzIDI5LjkxODEgMTk3LjcyNyAyOS42MjQxIDE5OC44NTQgMjkuMDI2MUMxOTkuMjkxIDI4Ljc5MjkgMTk5LjU3IDI4LjM0NjkgMTk5LjU5IDI3LjgyNDlDMTk5LjYwNSAyNy40Mzk3IDE5OS40NDggMjcuMDY5NyAxOTkuMTk5IDI2Ljc4MDhDMTk5LjE5OSAyNi43ODA4IDE5OC45MzUgMjYuNDc2NyAxOTguODQ5IDI2LjM3NTNDMTk4Ljc1OCAyNi4yNjg5IDE5OC42MDUgMjYuMTYyNSAxOTguNDE3IDI2LjE2MjVDMTk4LjI1NSAyNi4xNjI1IDE5OC4xNTMgMjYuMjAzIDE5OC4wOTggMjYuMjMzNEMxOTcuMTM4IDI2Ljc2MDUgMTk2LjE3OSAyNy4wMTM5IDE5NS4xNzQgMjcuMDEzOUMxOTMuODEzIDI3LjAxMzkgMTkzLjAzMiAyNi4zMTQ1IDE5My4wMzIgMjUuMDg4TDE5My4wMjYgMjQuMjQxNlYyNC4xNjA1SDE5My4xMDhIMTk5LjY0NkMxOTkuOTc2IDI0LjE2MDUgMjAwLjI0NSAyMy44OTE5IDIwMC4yNDUgMjMuNTYyNFYyMS4xMTQ1QzIwMC4yNSAxNy45MjE0IDE5OC4zMjYgMTYuMDkxOCAxOTQuOTgxIDE2LjA5MThaTTE5Ni44NzkgMjEuODY5NlYyMS45NTA3SDE5Ni43OThIMTkzLjEwM0gxOTMuMDIxVjIxLjg2OTZMMTkzLjAyNiAyMC45NDIxQzE5My4wMjYgMTkuNjcgMTkzLjcxMiAxOC45NzA2IDE5NC45NTUgMTguOTcwNkMxOTYuMTc5IDE4Ljk3MDYgMTk2Ljg4NCAxOS42OTAzIDE5Ni44ODQgMjAuOTQyMUwxOTYuODc5IDIxLjg2OTZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTc0LjI5NSAxNi42NDQ3VjE0LjY2ODFWMTIuMTMzOUMxNzQuMjk1IDExLjgwNDUgMTc0LjAyNiAxMS41MzU5IDE3My42OTYgMTEuNTM1OUgxNzEuMzM1QzE3MS4wMDUgMTEuNTM1OSAxNzAuNzM2IDExLjgwNDUgMTcwLjczNiAxMi4xMzM5VjI4LjEzOTZDMTcwLjczNiAyOC41ODU2IDE3MS4wNDYgMjguODg5NyAxNzEuMzQgMjguOTkxQzE3Mi42MDQgMjkuNDIxOSAxNzMuOTI0IDI5LjcwNTcgMTc1LjI2NCAyOS43ODE3QzE3NS41NjkgMjkuNzk2OSAxNzUuODIzIDI5LjU0ODYgMTc1LjgyMyAyOS4yNDQ1VjI3LjIyMjJDMTc1LjgyMyAyNi45MjgzIDE3NS42MDUgMjYuNjc0OCAxNzUuMzE1IDI2LjYzOTRDMTc0LjcyMSAyNi41NjMzIDE3NC4zIDI2LjM5NjEgMTc0LjMgMjYuMzk2MVYyNS4zMTE1VjE5Ljc2NjhWMTYuNjQ0N0gxNzQuMjk1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE0OS43ODEgMTEuMzc4NEMxNDguMTk4IDExLjM3ODQgMTQ2LjYzOSAxMS42ODc2IDE0NS4xNTIgMTIuMTk0NEMxNDQuODYyIDEyLjI5NTggMTQ0LjU0OCAxMi41OTk5IDE0NC41NDggMTMuMDQ1OVYyOS4wNTE1QzE0NC41NDggMjkuMzgxIDE0NC44MTcgMjkuNjQ5NiAxNDUuMTQ3IDI5LjY0OTZIMTQ3LjUwN0MxNDcuODM3IDI5LjY0OTYgMTQ4LjEwNiAyOS4zODEgMTQ4LjEwNiAyOS4wNTE1VjI0LjU0MDdDMTQ4Ljc4NiAyNC44MDk0IDE0OS40NzcgMjQuOTIwOSAxNTAuMjg5IDI0LjkyMDlDMTUzLjQ4NyAyNC45MjA5IDE1NS45MjQgMjIuNzMxNCAxNTUuOTI5IDE5LjQ3MjVWMTYuOTgzOUMxNTUuOTM0IDEzLjU3ODEgMTUzLjM5NiAxMS4zNzg0IDE0OS43ODEgMTEuMzc4NFpNMTUyLjMyIDE5LjQ0MjFDMTUyLjMyIDIwLjk1NzUgMTUxLjI1NCAyMS44MjQxIDE0OS43IDIxLjgyNDFDMTQ5LjA2NiAyMS44MjQxIDE0OC42NyAyMS43Mjc4IDE0OC4xMTEgMjEuNDE4N1YxNC43ODk0QzE0OC4xMTEgMTQuNzg5NCAxNDguODA3IDE0LjUxMDYgMTQ5LjY3NSAxNC41MTA2QzE1MS4yNDggMTQuNTEwNiAxNTIuMzIgMTUuMzE2NSAxNTIuMzIgMTYuOTAyOFYxOS40NDIxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE2OC4xNzggMTYuMjk0NkgxNjUuODczQzE2NS41NDMgMTYuMjk0NiAxNjUuMjc0IDE2LjU2MzIgMTY1LjI3NCAxNi44OTI3VjI2LjQ3MTdDMTY0LjgyOCAyNi42Mjg4IDE2NC4xMzIgMjYuNzA5OSAxNjMuNTEzIDI2LjcwOTlDMTYyLjA2MSAyNi43MDk5IDE2MS40MTYgMjUuOTc1IDE2MS40MTYgMjQuMzI3OFYxNy43ODk4QzE2MS40MTYgMTYuOTYzNiAxNjAuNzQxIDE2LjI4OTYgMTU5LjkxNCAxNi4yODk2SDE1OC40ODdDMTU4LjE1NyAxNi4yODk2IDE1Ny44ODggMTYuNTU4MiAxNTcuODg4IDE2Ljg4NzZWMjQuMzI3OEMxNTcuODg4IDI3Ljg2MDQgMTU5Ljg4OCAyOS44MDE2IDE2My41MTggMjkuODAxNkMxNjUuMTQ3IDI5LjgwMTYgMTY2LjcxNiAyOS40NzcyIDE2OC4yMDggMjguOTUwMUMxNjguNTIzIDI4LjgzODYgMTY4Ljc4NyAyOC40OTkgMTY4Ljc4NyAyOC4xMDg4VjE2Ljg4NzZDMTY4Ljc4MiAxNi41NjMyIDE2OC41MTMgMTYuMjk0NiAxNjguMTc4IDE2LjI5NDZaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTgyLjM0NiAyOS45MTgxQzE4MC4zODYgMjkuOTE4MSAxNzguOTI0IDI5LjM2MDYgMTc3LjI5NSAyOC4wOTg2QzE3Ny4xMjIgMjcuOTY2OSAxNzcuMTAyIDI3LjgxOTkgMTc3LjIxOSAyNy42NTI2TDE3OC41MjMgMjUuODUzNEMxNzguNjQgMjUuNzA2NCAxNzguODEzIDI1LjY2NTkgMTc4Ljk4NSAyNS43OTc2QzE4MC4xMzggMjYuNTc4MiAxODEuMzEgMjcuMDU5NiAxODIuNTU5IDI3LjA3OTlDMTgzLjgwOCAyNy4wNzk5IDE4NC42OTEgMjYuNjY5NCAxODQuNjkxIDI1Ljg1MzRDMTg0LjY5MSAyNC45MDU2IDE4My41MzkgMjQuNjExNyAxODIuMjE0IDI0LjM0ODFDMTgwLjI3NSAyMy45NTc5IDE3Ny4zOTEgMjMuMDMwNCAxNzcuMzkxIDIwLjAyNDlDMTc3LjM5MSAxNy40NDUxIDE3OS42NzYgMTYuMTgzMSAxODIuNiAxNi4xODMxQzE4NC4yOSAxNi4xODMxIDE4NS42NTYgMTYuNTkzNiAxODcuMjUgMTcuNjEyNEMxODcuNDQzIDE3LjcyMzkgMTg3LjQ3OCAxNy44OTExIDE4Ny4zNDYgMTguMDU4NEwxODYuMTE4IDE5Ljg0MjRDMTg2LjAwMSAyMC4wMDk3IDE4NS44MjggMjAuMDQ1MSAxODUuNjM1IDE5LjkzMzZDMTg0LjYzNSAxOS4zMjA0IDE4My41MjQgMTkuMDA2MSAxODIuNDQ3IDE5LjAwNjFDMTgxLjA4MiAxOS4wMDYxIDE4MC41NDQgMTkuNDUyMSAxODAuNTQ0IDIwLjEyMTJDMTgwLjU0NCAyMC45MzcyIDE4MS4zNTEgMjEuMTYwMiAxODIuOTg2IDIxLjUzMDFDMTg1LjY1NiAyMi4xNjM3IDE4Ny44NjQgMjMuMDE1MiAxODcuODY0IDI1Ljc2MjJDMTg3Ljg1OSAyOC4zNTcxIDE4NS43MDYgMjkuOTE4MSAxODIuMzQ2IDI5LjkxODFaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjIwMC4yNSIgaGVpZ2h0PSIzNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="PhonePe Pulse"></h4>
+                    
+                      <canvas id="pulse-pi" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body" style="background: #d7beee">
+                    <h4 class="card-title">Usage Distribution of user</h4>
+                    <canvas id="user-pi" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sec2" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Recurring Deposit
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Current value Vs Invested value</h4>
+                    <canvas id="rec-bar" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3">Interest Rate <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="rec-i">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Maturity Date <i class="mdi mdi-clock mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="rec-md">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Reccuring Amount <i class="mdi mdi-cash mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="rec-ra">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Growth Rate <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                    </h4>
+                    <h4 class="mb-5" id="rd-pro-mar">Loading ...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sec3" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Term Deposit
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Current value Vs Invested value</h4>
+                    <canvas id="fd-bar" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3">Interest Rate <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="fd-i">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Maturity Date <i class="mdi mdi-clock mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="fd-md">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Growth Rate <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                    </h4>
+                    <h4 class="mb-5" id="td-pro-mar">Loading ...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sec4" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Certificate of deposit
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Current value Vs Invested value</h4>
+                    <canvas id="cd-bar" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3">Interest Rate <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="cd-i">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Maturity Date <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="cd-md">Loading ...</h3>
+                    <h4 class="font-weight-normal mb-3">Growth Rate <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                    </h4>
+                    <h4 class="mb-5" id="cd-pro-mar">Loading ...</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sec5" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Indian Deposit recipt
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Current value Vs Invested value</h4>
+                    <canvas id="idr-bar" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3"> Rate <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="idr-r">Loading ...</h3>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sec6" class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Credit Card
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Current value Vs Invested value</h4>
+                    <canvas id="cc-bar" style="height:250px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h4 class="font-weight-normal mb-3">Loyalty Point <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                    </h4>
+                    <h3 class="fd-5" id="cc-lp">Loading ...</h3>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Made with ❤️ and ☕ by Team Hackholics</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/bank.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
